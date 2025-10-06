@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS and Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+      :root {
+        --bs-primary-rgb: 70, 163, 72;
+        --bs-primary: rgb(var(--bs-primary-rgb));
+        --bs-emphasis-color: rgb(var(--bs-primary-rgb));
+        --bs-primary-bg-subtle: rgb(206, 225, 206);
+        --bs-primary-border-subtle: rgb(70, 163, 72);
+        --bs-primary-text-emphasis: rgb(44, 105, 45);
+        --bs-backdrop-opactiy: 0;
+      }
+      .form-control:focus {
+        border-color: rgb(70, 163, 72);
+        box-shadow: 0 0 0 0.25rem rgba(30, 170, 30, 0.25);
+      }
+      .btn-primary {
+        --bs-btn-bg: var(--bs-primary);
+        --bs-btn-border-color: var(--bs-primary);
+        --bs-btn-hover-bg: rgb(56, 130, 57);
+        --bs-btn-hover-border-color: rgb(48, 110, 49);
+        --bs-btn-active-bg: rgb(48, 110, 49);
+        --bs-btn-active-border-color: rgb(40, 92, 41);
+        --bs-btn-disabled-bg: var(--bs-primary);
+        --bs-btn-disabled-border-color: var(--bs-primary);
+      }
+      #intro {
+        background-image: url("https://image.slidesdocs.com/responsive-images/background/spring-leaves-green-minimalist-powerpoint-background_9c2d163bb9__960_540.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      form:invalid {
+        [type="submit"] {
+          color: var(--bs-btn-disabled-color);
+          pointer-events: none;
+          background-color: var(--bs-primary);
+          border-color: var(--bs-btn-disabled-border-color);
+          opacity: var(--bs-btn-disabled-opacity);
+        }
+      }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navId">
+    <header>
+      <!-- Navigation Bar-->
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top bg-primary"
+        id="navId"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand w-auto d-inline-grid" href="#"
+            ><strong>ABDUL MUIZZ</strong> Software Engineer Intern</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#summary">Summary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Introduction Hero Section -->
+      <div
+        class="position-relative overflow-hidden p-5 m-md-3 text-center"
+        id="intro"
+      >
+        <div class="col-md-6 p-lg-5 mx-auto my-5">
+          <h1 class="display-3 fw-bold text-primary">Abdul Muizz</h1>
+          <h3 class="fw-normal text-muted mb-3">
+            Aspiring Software Engineer | Passionate about Coding and Problem
+            Solving
+          </h3>
+          <div class="d-flex gap-3 justify-content-center lead fw-normal">
+            <a
+              class="icon-link"
+              href="https://www.linkedin.com/in/abdulmuizz789/"
+              target="_blank"
+            >
+              LinkedIn
+              <i class="bi bi-linkedin align-self-baseline"></i>
+            </a>
+            <a
+              class="icon-link"
+              href="https://www.github.com/AbdulMuizz789"
+              target="_blank"
+            >
+              GitHub
+              <i class="bi bi-github align-self-baseline"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Summary Section -->
+      <div class="container my-5" id="summary">
+        <div class="p-md-5 py-5 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis border-bottom">Profile Summary</h1>
+          <p class="lead">
+            Enthusiastic and dedicated Computer Science student with a strong
+            foundation in programming, algorithms, and software development.
+            Eager to apply theoretical knowledge to real-world challenges and
+            contribute to innovative projects. Proficient in multiple
+            programming languages including Python, Java, and C++. Experienced
+            in collaborative team environments through academic projects and
+            internships. Committed to continuous learning and staying updated
+            with the latest industry trends. Seeking opportunities to leverage
+            my skills and passion for technology in a dynamic software
+            engineering role.
+          </p>
+          <div class="fs-5">
+            Hobbies:
+            <span
+              class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+              >Reading</span
+            >
+            <span
+              class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+              >Drawing</span
+            >
+            <span
+              class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+              >Football</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience section -->
+      <div class="container my-5" id="experience">
+        <div class="text-center py-5 p-md-5 bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis border-bottom">Experience</h1>
+          <div
+            class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center text-start"
+          >
+            <div class="list-group">
+              <a
+                class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true"
+                data-bs-toggle="modal"
+                data-bs-target="#digitelexModal"
+              >
+                <img
+                  src="https://digitelex.in/assets/icon/apple-touch-icon-158-precomposed.png"
+                  alt="Digitelex Solutions Logo"
+                  width="32"
+                  height="32"
+                  class="rounded-circle flex-shrink-0"
+                />
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">Software Engineer Intern</h6>
+                    <p class="mb-0 opacity-75">Digitelex Solutions</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap"
+                    >Sep. 2025 - Present</small
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5" id="education">
+        <div class="py-5 p-md-5 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis border-bottom">Education</h1>
+          <div class="bd-example m-0 border-0">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Institute</th>
+                  <th scope="col">Degree/Certificate</th>
+                  <th scope="col">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>MVSR Engineering College</td>
+                  <td>B.E. in Computer Science and Engineering</td>
+                  <td>Expected Nov. 2026</td>
+                </tr>
+                <tr>
+                  <th scope="row" colspan="4">Licenses & Certifications</th>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Google</td>
+                  <td>Google AI Essentials</td>
+                  <td>Aug. 2025</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Amazon Web Services (AWS)</td>
+                  <td>AWS Academy Cloud Foundations</td>
+                  <td>Apr. 2025</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Amazon Web Services (AWS)</td>
+                  <td>AWS Academy Data Engineering</td>
+                  <td>Apr. 2025</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Simplilearn</td>
+                  <td>Getting Started with Machine Learning Algorithms</td>
+                  <td>Mar. 2025</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Saylor Academy</td>
+                  <td>Operating Systems</td>
+                  <td>Jan. 2025</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Cisco Networking Academy</td>
+                  <td>Linux Essentials</td>
+                  <td>Dec. 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5" id="skills">
+        <div class="py-5 p-md-5 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis border-bottom">Skills</h1>
+          <div class="row row-cols-1 row-cols-md-2 g-4 py-4 px-1 px-md-0">
+            <div class="col">
+              <!-- Languages Card -->
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Languages</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">C/C++</div>
+                      <div class="col text-primary fs-4">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">Python</div>
+                      <div class="col text-primary fs-4">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">Java</div>
+                      <div class="col text-primary fs-4">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">Javascript</div>
+                      <div class="col text-primary fs-4">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">HTML/CSS</div>
+                      <div class="col text-primary fs-4">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">PHP</div>
+                      <div class="col text-primary fs-4">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="row">
+                      <div class="col">SQL (MySQL, PostgresSQL)</div>
+                      <div class="col text-primary fs-4">
+                        <i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star-fill"></i
+                        ><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row row-cols-1 row-cols-lg-2 g-4">
+                <div class="col">
+                  <!-- Frameworks Card -->
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Frameworks</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="row">
+                          <div class="col">Node.js</div>
+                          <div class="col-7 text-primary fs-4">
+                            <i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star"></i
+                            ><i class="bi bi-star"></i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row">
+                          <div class="col">React</div>
+                          <div class="col-7 text-primary fs-4">
+                            <i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star"></i
+                            ><i class="bi bi-star"></i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row">
+                          <div class="col">Express.js</div>
+                          <div class="col-7 text-primary fs-4">
+                            <i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star-fill"></i
+                            ><i class="bi bi-star"></i>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Tools Card -->
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Tools</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Git/GitHub</li>
+                      <li class="list-group-item">MongoDB</li>
+                      <li class="list-group-item">VS Code</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Soft Skills</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Problem Solving</li>
+                      <li class="list-group-item">Time Management</li>
+                      <li class="list-group-item">Communication</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="container my-5" id="projects">
+        <div class="py-5 p-md-5 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis border-bottom">Projects</h1>
+          <div class="row row-cols-1 row-cols-lg-3 g-4 py-4 px-1 px-md-0">
+            <div class="col">
+              <!-- Project 1 -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title fs-2 text-body-emphasis">
+                    Chatity – Full-stack AI Chatbot
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <p class="lead">
+                    Chatity is a sophisticated, full-stack AI chatbot
+                    application featuring real-time streaming responses,
+                    multi-provider AI model support (OpenAI, Anthropic, Google
+                    Gemini, Ollama), and a professional-grade, persistent user
+                    interface.
+                  </p>
+
+                  <div class="fs-5">
+                    <div>Technologies used:</div>
+                    <div>
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >React</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >Node.js</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >Express.js</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >PostgresSQL</span
+                      >
+                    </div>
+                  </div>
+                  <br />
+                  <a
+                    href="https://github.com/AbdulMuizz789/chatity-app"
+                    target="_blank"
+                    class="icon-link"
+                  >
+                    GitHub Repository
+                    <i class="bi bi-chevron-right align-self-baseline"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Project 2 -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title fs-2 text-body-emphasis">
+                    HunarBazaar – Web Platform for Artisans
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <p class="lead">
+                    HunarBazaar is a dynamic web platform designed to empower
+                    local artisans by providing them with a dedicated space to
+                    showcase and sell their handcrafted products. The platform
+                    features a user-friendly interface, and robust product
+                    management tools, enabling artisans to reach a broader
+                    audience and grow their businesses effectively.
+                  </p>
+                  <div class="fs-5">
+                    <div>Technologies used:</div>
+                    <div>
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >React</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >Node.js</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >Express.js</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >MongoDB</span
+                      >
+                    </div>
+                  </div>
+                  <br />
+                  <a
+                    href="https://github.com/AbdulMuizz789/HunarBazaar"
+                    target="_blank"
+                    class="icon-link"
+                  >
+                    GitHub Repository
+                    <i class="bi bi-chevron-right align-self-baseline"></i>
+                  </a>
+                  <a
+                    href="https://hunarbazaar.vercel.app/"
+                    target="_blank"
+                    class="icon-link"
+                  >
+                    View Project
+                    <i class="bi bi-chevron-right align-self-baseline"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <!-- Project 3 -->
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="fs-2 text-body-emphasis">
+                    Infarmaland – Mobile App
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <p class="lead">
+                    Infarmaland is a mobile application designed to connect
+                    farmers with agricultural experts and resources. The app
+                    provides a platform for farmers to access their land
+                    details.
+                  </p>
+                  <div class="fs-5">
+                    <div>Technologies used:</div>
+                    <div>
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >Android Studio</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >Java</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >Firebase Realtime Database</span
+                      >
+                      <span
+                        class="badge bg-primary-subtle border border-primary-subtle text-primary rounded-pill"
+                        >MapBox</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="container my-5" id="contact">
+        <div class="py-5 p-md-5 text-center bg-body-tertiary rounded-3">
+          <h1 class="text-body-emphasis border-bottom">Contact</h1>
+          <form action="javascript:void(0);">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="FirstName LastName"
+                required
+              />
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+                required
+              />
+              <label for="email">Email address</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Your Message"
+                id="message"
+                style="height: 100px"
+                required
+              ></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary my-3"
+              data-bs-toggle="modal"
+              data-bs-target="#feedbackModal"
+              id="submitBtn"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="ms-2 mb-3 mb-md-0 text-body-secondary"
+            >© 2025 Abdul Muizz</span
+          >
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              class="text-body-secondary fs-4"
+              href="https://www.linkedin.com/in/abdulmuizz789"
+              aria-label="LinkedIn"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-body-secondary fs-4"
+              href="https://www.github.com/AbdulMuizz789"
+              aria-label="GitHub"
+              ><i class="bi bi-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Digitelex Intern Modal-->
+    <div
+      class="modal fade"
+      id="digitelexModal"
+      tabindex="-1"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">Software Engineer Intern</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Company:</strong> Digitelex Solutions</p>
+            <p><strong>Duration:</strong> Sep. 2025 - Present</p>
+            <p>
+              <strong>Responsibilities:</strong>
+            </p>
+            <ul>
+              <li>
+                Collaborate with cross-functional teams to design, develop, and
+                implement software solutions that meet client requirements.
+              </li>
+              <li>
+                Participate in code reviews and contribute to improving coding
+                standards and best practices within the development team.
+              </li>
+              <li>
+                Assist in troubleshooting and resolving software defects and
+                issues reported by users or identified through testing.
+              </li>
+              <li>
+                Stay updated with emerging technologies and industry trends to
+                enhance the development process and suggest innovative
+                solutions.
+              </li>
+              <li>
+                Contribute to the documentation of software designs, processes,
+                and user manuals to ensure clarity and maintainability.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div
+      class="modal"
+      tabindex="-1"
+      id="feedbackModal"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered"
+        style="align-items: end"
+      >
+        <div class="modal-content border-0">
+          <div
+            class="alert alert-success alert-dismissible fade show mb-auto"
+            role="alert"
+          >
+            Message Sent! Thank You For Contacting!
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
